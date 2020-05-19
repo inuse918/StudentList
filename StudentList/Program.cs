@@ -23,6 +23,13 @@ namespace StudentList
             list.Add(new Teacher() { name = "김보경", major = "가정" });
             list.Add(new Teacher() { name = "정민주", major = "디자인" });
 
+            for(int i = list.Count-1; i>=0; i--)
+            {
+                if (list[i].major == "정보컴퓨터")
+                {
+                    list.RemoveAt(i);
+                }
+            }
             foreach(var item in list)
             {
                 Console.WriteLine(item.name+":"+item.major);
