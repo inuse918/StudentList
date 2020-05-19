@@ -8,10 +8,10 @@ namespace StudentList
 {
     class Student
     {
+        public string id;
         public string name;
-        public string password;
-        public string address;
-        public string phoneNumber;
-        public DateTime regDate;
+        public int grade;
+        public string major;
+        public DateTime birthday;
     }
 }
